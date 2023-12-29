@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#main-b {
+    display: block;
+    background-image: url("img/start-page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    aspect-ratio: 16/9;
+}
+
+
+#google-src {
+    padding-left: 1%;
+    position: absolute;
+    top: 75%;
+    width: 24%;
+    height: 13%;
+    left: 16.4%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -webkit-transform-origin: 50% -60% ;
+    transform: perspective(1100px) rotateY(60deg);
+    color: deeppink;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: "Fira Code Medium";
+}
+
+#google-src::placeholder {
+    color:ghostwhite ;
+}
+
+.logo {
+    position: absolute;
+    height: 10%;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 30px ghostwhite;
+    clip-path: polygon(
+            0px calc(100% - 25px),
+            5px calc(100% - 25px),
+            5px calc(100% - 15px),
+            10px calc(100% - 15px),
+            10px calc(100% - 10px),
+            15px calc(100% - 10px),
+            15px calc(100% - 5px),
+            25px calc(100% - 5px),
+            25px 100%,
+            calc(100% - 25px) 100%,
+            calc(100% - 25px) calc(100% - 5px),
+            calc(100% - 15px) calc(100% - 5px),
+            calc(100% - 15px) calc(100% - 10px),
+            calc(100% - 10px) calc(100% - 10px),
+            calc(100% - 10px) calc(100% - 15px),
+            calc(100% - 5px) calc(100% - 15px),
+            calc(100% - 5px) calc(100% - 25px),
+            100% calc(100% - 25px),
+            100% 25px,
+            calc(100% - 5px) 25px,
+            calc(100% - 5px) 15px,
+            calc(100% - 10px) 15px,
+            calc(100% - 10px) 10px,
+            calc(100% - 15px) 10px,
+            calc(100% - 15px) 5px,
+            calc(100% - 25px) 5px,
+            calc(100% - 25px) 0px,
+            25px 0px,
+            25px 5px,
+            15px 5px,
+            15px 10px,
+            10px 10px,
+            10px 15px,
+            5px 15px,
+            5px 25px,
+            0px 25px
+    );
+}
+
+
+#cal {
+    top: 50%;
+    left: 27%;
+    -webkit-transform-origin: 50% -60% ;
+    transform: perspective(1100px) rotateY(60deg);
+    opacity: 0.7;
+}
+
+#yt {
+    top: 50%;
+    left: 23%;
+    -webkit-transform-origin: 50% 50% ;
+    transform: perspective(1100px) rotateY(60deg);
+    opacity: 0.7;
+}
+
+#figma {
+    top: 28%;
+    left: 23%;
+    -webkit-transform-origin: 50% 70% ;
+    transform: perspective(1100px) rotateY(60deg);
+    opacity: 0.5;
+}
+
+#class {
+    top: 80%;
+    right: 29%;
+    -webkit-transform-origin: -50% 60% ;
+    transform: perspective(1100px) rotateY(60deg);
+    opacity: 0.7;
+}
+
+#scrim {
+    top: 36%;
+    right: 26%;
+    -webkit-transform-origin: -50% 60% ;
+    transform: perspective(1100px) rotateY(60deg);
+    opacity: 0.7;
+}
+
+#figma:active,
+#class:active,
+#yt:active,
+#cal:active,
+#scrim:active{
+    opacity: 1;
+}
+
+#btn-1 {
+    visibility: hidden;
+}
